@@ -3,11 +3,11 @@
 ## 使用方法
 #### 国外VPS
 ```
-wget -O aapanel.sh https://raw.githubusercontent.com/AaronYES/aapanel/main/aapanel.sh && chmod +x aapanel.sh && clear && ./aapanel.sh
+wget -O aapanel.sh https://raw.githubusercontent.com/cyclists/aapanel/main/aapanel.sh && chmod +x aapanel.sh && clear && ./aapanel.sh
 ```
 
 #### 国内VPS
 ```
-wget -O aapanel.sh https://ghproxy.com/https://raw.githubusercontent.com/AaronYES/aapanel/main/aapanel.sh && chmod +x aapanel.sh && clear && ./aapanel.sh
+wget -O aapanel.sh https://do.sep.cc/btpanel/plugins/aapanel.sh && chmod +x aapanel.sh && clear && ./aapanel.sh
 ```
-![bash](https://ghproxy.com/https://raw.githubusercontent.com/AaronYES/aapanel/main/bash.png)
+![bash](https://github.com/cyclists/aapanel/blob/main/bash.png)
