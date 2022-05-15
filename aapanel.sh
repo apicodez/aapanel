@@ -28,22 +28,22 @@ bash "/root/aapanel-install.sh"
 
 # 降级aapanel 官网下载(最后一个无广告版本)
 function downgrade-official(){
-wget -O "/root/LinuxPanel_EN-6.8.23.zip" "http://node.aapanel.com/install/update/LinuxPanel_EN-6.8.23.zip"
+wget -O "/root/LinuxPanel_EN-6.8.23.zip" "https://do.sep.cc/btpanel/LinuxPanel_EN-6.8.23.zip"
 blue "下载完成,正在降级."
 unzip LinuxPanel_EN-6.8.23.zip
 cd /root/panel
-wget -O "/root/panel/downgrade.sh" "https://ghproxy.com/https://raw.githubusercontent.com/AaronYES/aapanel/main/downgrade.sh" 
+wget -O "/root/panel/downgrade.sh" "https://do.sep.cc/btpanel/plugins/downgrade.sh" 
 bash "/root/panel/downgrade.sh"
 red "降级成功."
 }
 
 # 降级aapanel GitHub下载 (最后一个无广告版本)
 function downgrade-github(){
-wget -O "/root/LinuxPanel_EN-6.8.23.zip" "https://ghproxy.com/https://github.com/AaronYES/aapanel/releases/download/1.0/LinuxPanel_EN-6.8.23.zip"
+wget -O "/root/LinuxPanel_EN-6.8.23.zip" "https://github.com/cyclists/aapanel/files/8695035/LinuxPanel_EN-6.8.23.zip"
 blue "下载完成,正在降级."
 unzip LinuxPanel_EN-6.8.23.zip
 cd /root/panel
-wget -O "/root/panel/downgrade.sh" "https://ghproxy.com/https://raw.githubusercontent.com/AaronYES/aapanel/main/downgrade.sh" 
+wget -O "/root/panel/downgrade.sh" "https://raw.githubusercontent.com/cyclists/aapanel/main/downgrade.sh" 
 bash "/root/panel/downgrade.sh"
 red "降级成功."
 }
@@ -72,7 +72,7 @@ red "卸载aaPanel成功."
 
 # 汉化 sinicization
 function sinicization(){
-wget -O "/root/aapanel-zh-CN.tar.gz" "https://ghproxy.com/https://github.com/AaronYES/aapanel/releases/download/1.1/aapanel-zh-CN.tar.gz"
+wget -O "/root/aapanel-zh-CN.tar.gz" "https://github.com/cyclists/aapanel/files/8695070/aapanel-zh-CN.tar.gz"
 tar -zxvf aapanel-zh-CN.tar.gz
 mv /root/server/panel/BTpanel/static/language/English/* /www/server/panel/BTPanel/static/language/English/
 mv /root/server/panel/config/menu.json /www/server/panel/config/
